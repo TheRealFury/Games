@@ -1,65 +1,157 @@
-<html>
-<head>
-    <title>About Me</title>
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- HTML Specifics -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title of the Webpage -->
+    <title>Ayush Bhatt</title>
+
+    <!-- Reference to Bootstrap CSS Files -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./headers.css" rel="stylesheet">
+    <link href="./heroes.css" rel="stylesheet">
+
     <style>
-        img {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-        }
-    </style>
-    <style>
-      .sideDiv {
-        border: 1px outset black;
-        background-color: white;
-        text-align: center;
-        width: 120;
-        height: 400;
+      .breaker{
+        width: 100%;
+        height: 50px;
       }
     </style>
-    <style>
-      .mainDiv {
-        border: 1px outset black;
-        background-color: white;
-        text-align: left;
-        width: 1220;
-        height: 400;
-      }
-    </style>
-    <style>
-      .invisiDiv {
-        border: 1px outset white;
-        background-color: white;
-      }
-    </style>
-    <a href="https://ayushbhatt.in"><img src="AyushLogo.png" alt="logo" height="9%" width="9%" style="float:left"></a>
-    <br> &nbsp; &nbsp;
-    <a href="https://ayushbhatt.in/About-Me"><button>About Me</button></a> &nbsp; &nbsp;
-    <a href="https://ayushbhatt.in/My-Achievements"><button>My Achievements</button></a> &nbsp; &nbsp;
-    <a href="https://ayushbhatt.in/Contact-Me"><button>Contact Me</button></a> <br><br>
-    <hr>
-</head>
-<body bgcolor="lightblue">
-  <div style="display: flex; flex-direction: row;" hidden>
-  <div class="sideDiv" style="background-color: lightgreen;">
-      <br> <a href="https://ayushbhatt.in"><button>Home Page</button></a>
-      <br> <br> <a href="https://ayushbhatt.in/Games"><button>Games</button></a>
-      <br> <br> <a href="https://ayushbhatt.in"><button>My Blog</button></a>
-  </div> &nbsp;
-  <div class="mainDiv" style="background-color:bisque;">
-    <p> &nbsp; &nbsp; Apart from my coding addiction, I also am addicted to Digital Easter Eggs. I also run a blog on the semt topic that you can read by clicking either of the buttons below.</p>
-    <p> &nbsp; &nbsp; An Easter egg is a message, image, or feature hidden in a video game, film, or other, usually electronic, medium. The term used in this manner was coined around 1979 by Steve Wright, the then-Director of Software Development in the Atari Consumer Division, to describe a hidden message in the Atari video game Adventure, in reference to an Easter egg hunt. The earliest known video game Easter egg is in Moonlander (1973), in which the player tries to land a spaceship on the moon; if the player flies horizontally enough, they encounter a McDonald's restaurant and if they land next to it an astronaut will visit it instead of standing next to the ship.</p>
-    <br> <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-    <a href="https://ayushbhatt.in/My-Blog"><button>Visit my Blog</button></a>
-  </div>
-  </div>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  chat-icon="https:&#x2F;&#x2F;www.google.com&#x2F;imgres?imgurl=https%3A%2F%2Fscx2.b-cdn.net%2Fgfx%2Fnews%2Fhires%2F2019%2F3-robot.jpg&ampimgrefurl=https%3A%2F%2Ftechxplore.com%2Fnews%2F2021-01-ces-robots.html&amptbnid=k5j75H3TlCaAiM&ampvet=12ahUKEwi80YrJkf3wAhX6k0sFHdrrBJYQMygKegUIARDsAQ..i&ampdocid=0DMYMUlwbbntyM&ampw=1920&amph=1771&ampq=robot&ampved=2ahUKEwi80YrJkf3wAhX6k0sFHdrrBJYQMygKegUIARDsAQ"
-  intent="WELCOME"
-  chat-title="WebAgent"
-  agent-id="ecf17201-eb5b-4308-afa7-508d27e12b07"
-  language-code="en"
-></df-messenger>
-</body>
+
+  </head>
+  <body style="background-color:white">
+      <!-- Top Navigation Bar -->
+      <div class="container" style="background-color:white">
+        <header class="d-flex flex-wrap justify-content-center py-2 mb-3 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          
+            <span class="fs-4">Ayush Bhatt</span>
+          </a>
+
+          <!-- Page Link Names and URLs -->
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Achievements</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">My Projects</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact me</a></li>
+          </ul>
+        </header>
+      </div>
+
+      <!-- Breaker -->
+      <div style="background-color: lightgrey;" class="breaker"></div>
+
+      <!-- The Center of Attention -->
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">WHO WANNA PLAY?</h1>
+        <div class="col-lg-6 mx-auto">
+        <p>This is a choicey collection of some of the online games I made using HTML, and JS. They all look bad from a UI point of view (😅), so it is advised that you play these games only if you are somehow immune to bad UI. Also, these games are designed only to be played on devices that can support external keyboards (laptops, desktops, iPads with keyboards, etc) and cannot be played on mobile devices. Speaking of which, why are you still reading this?!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        </div>
+        </div>
+      </div>
+
+      <!-- Breaker -->
+      <div style="background-color: lightgrey;" class="breaker"></div>
+
+      <!-- Atari Breakout -->
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">Atari Breakout</h1>
+            <p class="lead">This is a remake of the legendary break-the-pixels game that ran on Atari consoles. You have 3 lives to destroy all the 100 bricks in the game. There is no time limit. The ball is bounced around using the 'pad' at the bottom of the screen initally controllable using your mouse, and control can always be switched to keyboard (refer to Docs link provided in-game). It has a really bad UI, but I'll work on that in the next iteration of the game, which I hope to release soon.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Play</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">View on GitHub</button>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720">
+          </div>
+        </div>
+      </div>
+
+      <!-- Trex Run -->
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">Trex Run</h1>
+            <p class="lead">This is yet another remake, but this time of a slightly more known figure - the Google Trex. It has terrible UI (that's normal for any game that I make), but it's fun nonetheless. It has it's own share of bugs, but I'm simply too occupied with my other projects to take care of this one. If you wanna help out, feel free to reach out over GitHub, or simply fork the repo. The controls of the game are exactly the same as the original game, and the look is undistinguishable from the real game too. The main difference between the two is the efficiency with which they run, which will be obvious to anyone who's played the game before.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Play</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">View on GitHub</button>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720">
+          </div>
+        </div>
+      </div>
+
+      <!-- The Typing Game -->
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">The Type Test</h1>
+            <p class="lead">This game tests your typing efficiency in real-time. You will be shown a letter on screen, and you must press the corresponding letter on your keyboard as fast as you can to build up your score. You have a time constraint, that is constant across all players. I am working on a version with better UI, and scoring system. If I have enough patience, it might even have a scoreboard. NOTE : This is NOT a reliable measure of how fast your typing is, there are better tests online, and this is intended (for now) to be only a game.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Play</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">View on GitHub</button>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720">
+          </div>
+        </div>
+      </div>
+
+      <!-- DualPixel -->
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">DualPixel</h1>
+            <p class="lead">This game is basically a shootout between two (10 pixel-sized) pixels, one red and the other blue. The blue pixel (starting out on left) is controlled by A and D for left and right respectively, W for jump, and SPACE for shoot. The red pixel (starting out on right) uses LEFT-ARROW, RIGHT-ARROW, UP-ARROW, and ENTER for left, right, jump and shoot repectively. Each pixel can be shot 10 times before losing. The game gets monotonous after sometime (for now), and I have a better version with improved functionality on my to-do list.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Play</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">View on GitHub</button>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720">
+          </div>
+        </div>
+      </div>
+
+      <!-- The Ball Simulator -->
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1">The Ball Simulator</h1>
+            <p class="lead">This is more of a physics simulation than a game. You get to control a ball in a small area where you control a variety of factor in the ball's environment, like gravity, ball's mass, ball's initial velocity, air resistance, and ball's initial release point. While the other factors can be controlled using a text interface, the ball's position can only be controlled using your mouse. In all situations (except a chosen few) the ball settles down to a stationary state after some time. However, the ability to change basic environmental factors like gravity and air resistance make this game really fun.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Play</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">View on GitHub</button>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+              <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720">
+          </div>
+        </div>
+      </div>
+
+      <!-- End of page -->
+      <div style="background-color: lightslategray">
+        <br>
+        <p style="text-align:center;color:black;font-size:13px;">This site uses Bootstrap.</p>
+        <br><br><br><br><br><br>
+      </div>
+    </main>
+    
+    <!-- Link to Bootstrap JS File -->
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
 </html>
